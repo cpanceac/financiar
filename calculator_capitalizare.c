@@ -1,13 +1,11 @@
-// for now we assume governement tax is 10% but the program should be fixed to read govt tax from user
+// If you store some money in a deposit and capitalize the interest, how much money will you have in a given time period?
 
 #include "stdio.h"
 
 int main()
 {
 	int val, t, i, j, bar_len; //Default tax value
-	float f, final, interest, gain, max_gain, tax = 10;
-
-	printf("For now we assume governement tax is 10%\n");
+	float f, final, interest, gain, max_gain, tax;
 
 	printf("Enter initial value: ");
 	scanf("%d", &val);
@@ -17,6 +15,9 @@ int main()
 
 	printf("Enter interest: ");
 	scanf("%f", &f);
+	
+	printf("Enter government tax: ");
+	scanf("%f", &tax);
 
 	// Initial value
 	final = val;
